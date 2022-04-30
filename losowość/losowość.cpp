@@ -9,9 +9,11 @@ int main()
 
 	const int table_size = 20;
 	int table[table_size];
-	char i;
-	char zmienna;
+	int i;
+	int j;
+	int zmienna;
 	int losowa;
+	int chwilowa;
 
 
 	for (i = 0; i < table_size; i++)
@@ -20,7 +22,7 @@ int main()
 
 		cin >> zmienna;
 
-		if (zmienna == '0')
+		if (zmienna == 0)
 		{
 			break;
 		}
@@ -30,13 +32,13 @@ int main()
 		}
 	}
 
-	for (int j = i; j <= i; j++)
+	for (j = 0; j < i; j++)
 	{
-		losowa = table[i];
-		srand((int)time(0));
-		losowa = rand() % table[i];
-		cout << "losowo" << endl;
-		cout << losowa;
+		chwilowa = table[j];
+		losowa = 0;
+		srand(time(NULL));
+		losowa = rand() % chwilowa;
+		cout << losowa << endl;
 	}
 
 }
