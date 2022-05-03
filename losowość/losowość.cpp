@@ -32,13 +32,12 @@ int main()
 		}
 	}
 
+
 	for (j = 0; j < i; j++)
 	{
 		chwilowa = table[j];
-		losowa = 0;
 		srand(time(NULL));
 		losowa = rand() % chwilowa;
-		cout << losowa << endl;
+		cout << "wylosowane miejsce w tablicy to: " << table[losowa] << endl;
 	}
-
 }
