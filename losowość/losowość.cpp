@@ -34,7 +34,6 @@ int main()
 		{
 			cout << "brawo zgadles :( " << endl;
 			break;
-			losowanie nie działa poprawnie sprawdzanie poprawione
 		}
 
 
