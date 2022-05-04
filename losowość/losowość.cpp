@@ -40,6 +40,7 @@ int main()
 		if (proba != table[i]) 
 		{
 			cout << i+1 <<" liczba sie nie zgadza :) " << endl;
+		
 		}
 
 	}
