@@ -18,7 +18,7 @@ int main()
 
 	for (i = 0; i < table_size; i++)
 	{
-
+		srand(time(NULL));
 		liczba = 0;
 		liczba = rand() % 100 + 1;
 		table[i] = liczba;
@@ -37,7 +37,7 @@ int main()
 		}
 
 
-		if (proba != table[i]) 
+		else
 		{
 			cout << i+1 <<" liczba sie nie zgadza :) " << endl;
 		
