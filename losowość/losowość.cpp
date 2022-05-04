@@ -10,7 +10,7 @@ int main()
 	const int table_size = 10;
 	int table[table_size];
 	int i;
-	int j;
+	int ;
 	int liczba;
 	int proba;
 
@@ -18,7 +18,7 @@ int main()
 
 	for (i = 0; i < table_size; i++)
 	{
-		srand(time(0));
+
 		liczba = 0;
 		liczba = rand() % 100 + 1;
 		table[i] = liczba;
@@ -28,21 +28,22 @@ int main()
 	cin >> proba;
 
 	for (i = 0; i < table_size; i++) {
-	
 
-		if (table[i] == proba) {
-		
-			cout << "brawo zgadles :( ";
+
+		if (proba == table[i]) {
+
+			cout << "brawo zgadles :( " << endl;
+			break;
 		}
-		break;
+
 
 		if (table[i] != proba) {
-		
-			cout << "nie tym razem :)";
+
+			cout << "nie tym razem :)" << endl;
 		}
-		break;
+
 	}
 
-	
+
 
 }
