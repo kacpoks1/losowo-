@@ -7,37 +7,42 @@ using namespace std;
 int main()
 {
 
-	const int table_size = 20;
+	const int table_size = 10;
 	int table[table_size];
 	int i;
 	int j;
-	int zmienna;
-	int losowa;
-	int chwilowa;
+	int liczba;
+	int proba;
 
+	cout << "wylosowano liczbe od 1 do 100, zgadniesz?" << endl;
 
 	for (i = 0; i < table_size; i++)
 	{
-		cout << "wpisz znaki, aby przerwac podaj 0  " << endl;
+		srand(time(0));
+		liczba = 0;
+		liczba = rand() % 100 + 1;
+		table[i] = liczba;
 
-		cin >> zmienna;
+	}
+	cout << "podaj liczbe: ";
+	cin >> proba;
 
-		if (zmienna == 0)
-		{
-			break;
+	for (i = 0; i < table_size; i++) {
+	
+
+		if (table[i] == proba) {
+		
+			cout << "brawo zgadles :) ";
 		}
-		else
-		{
-			table[i] = zmienna;
+		break;
+
+		if (table[i] != proba) {
+		
+			cout << "nie tym razem :)";
 		}
+		break;
 	}
 
+	
 
-	for (j = 0; j < i; j++)
-	{
-		chwilowa = table[j];
-		srand(time(NULL));
-		losowa = rand() % chwilowa;
-		cout << "wylosowane miejsce w tablicy to: " << table[losowa] << endl;
-	}
 }
