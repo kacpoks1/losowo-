@@ -32,7 +32,7 @@ int main()
 
 		if (table[i] == proba) {
 		
-			cout << "brawo zgadles :) ";
+			cout << "brawo zgadles :( ";
 		}
 		break;
 
