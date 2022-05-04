@@ -27,19 +27,20 @@ int main()
 	cout << "podaj liczbe: ";
 	cin >> proba;
 
-	for (i = 0; i < table_size; i++) {
+	for (i = 0; i < table_size; i++) 
+	{
 
-
-		if (proba == table[i]) {
-
+		if (proba == table[i]) 
+		{
 			cout << "brawo zgadles :( " << endl;
 			break;
+			losowanie nie działa poprawnie sprawdzanie poprawione
 		}
 
 
-		if (table[i] != proba) {
-
-			cout << "nie tym razem :)" << endl;
+		if (proba != table[i]) 
+		{
+			cout << i+1 <<" liczba sie nie zgadza :) " << endl;
 		}
 
 	}
